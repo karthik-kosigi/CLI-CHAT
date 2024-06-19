@@ -22,7 +22,7 @@
 import socket
 
 # Define the host and port on which the server will listen
-HOST = '192.168.173.74'  # This means the server will listen on this specific IP address
+HOST = 'localhost'  # This means the server will listen on this specific IP address
 PORT = 12345
 
 # Create a socket object

@@ -2,9 +2,10 @@ import socket
 
 c = socket.socket()
 
-c.connect(('192.168.173.74',9999))
+c.connect(('localhost',12345))
+name=" "
+while name != 'end':
+    name= input("Enter your name : ")
+    c.send(bytes(name,'utf-8'))
 
-name= input("Enter your name : ")
-c.send(bytes(name,'utf-8'))
-
-print(c.recv(1024).decode())
+    print(c.recv(1024).decode())
